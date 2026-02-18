@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoITP from "@/assets/Logo_ITP.svg";
+import logoSistemas from "@/assets/Logo_Sistemas.svg";
+import ReticulaModal from "@/components/ReticulaModal";
+import { GraduationCap } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -14,6 +18,17 @@ const HeroSection = () => {
       <div className="absolute inset-0 scanline pointer-events-none" />
 
       <div className="relative z-10 container mx-auto px-4 text-center">
+        {/* Logos */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="flex items-center justify-center gap-6 mb-8"
+        >
+          <img src={logoITP} alt="Logo ITP" className="h-20 md:h-28 drop-shadow-lg" />
+          <img src={logoSistemas} alt="Logo ISC" className="h-20 md:h-28 drop-shadow-lg" />
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,17 +64,33 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <a
-            href="#info"
+            href="https://www.itparral.edu.mx/inicio/oferta-educativa/sistemas-computacionales/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold text-lg box-glow hover:scale-105 transition-transform"
           >
             Conoce la carrera
           </a>
           <a
+            href="https://itparral.mindbox.app/aspirantes/registro/bienvenido"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-secondary text-secondary-foreground font-semibold text-lg hover:scale-105 transition-transform"
+          >
+            <GraduationCap className="w-5 h-5 mr-2" />
+            Solicitar Ficha
+          </a>
+          <ReticulaModal>
+            <button className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-primary/50 text-primary font-semibold text-lg hover:bg-primary/10 transition-colors">
+              Ver Retícula
+            </button>
+          </ReticulaModal>
+          <a
             href="#conecta"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-primary/50 text-primary font-semibold text-lg hover:bg-primary/10 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-muted-foreground/30 text-muted-foreground font-semibold text-lg hover:bg-muted/50 transition-colors"
           >
             Conéctate con nosotros
           </a>
