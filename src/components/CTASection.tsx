@@ -19,14 +19,24 @@ const CTASection = () => {
             Inscríbete en Ingeniería en Sistemas Computacionales en el Instituto
             Tecnológico de Parral y comienza tu camino en el mundo de la tecnología.
           </p>
-          <a
-            href="https://www.parral.tecnm.mx/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-10 py-4 rounded-lg bg-primary text-primary-foreground font-bold text-lg box-glow hover:scale-105 transition-transform"
-          >
-            Más Información →
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://www.itparral.edu.mx/inicio/oferta-educativa/sistemas-computacionales/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-lg bg-primary text-primary-foreground font-bold text-lg box-glow hover:scale-105 transition-transform"
+            >
+              Más Información →
+            </a>
+            <a
+              href="https://itparral.mindbox.app/aspirantes/registro/bienvenido"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-10 py-4 rounded-lg bg-secondary text-secondary-foreground font-bold text-lg hover:scale-105 transition-transform"
+            >
+              Solicitar Ficha
+            </a>
+          </div>
         </motion.div>
 
         {/* Footer */}

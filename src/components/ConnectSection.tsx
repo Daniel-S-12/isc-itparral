@@ -5,21 +5,21 @@ import { Facebook, Globe, MessageCircle } from "lucide-react";
 const links = [
   {
     label: "Sitio Oficial",
-    url: "https://www.parral.tecnm.mx/",
+    url: "https://www.itparral.edu.mx/inicio/oferta-educativa/sistemas-computacionales/",
     icon: Globe,
-    description: "Visita la página oficial del Instituto Tecnológico de Parral",
+    description: "Visita la página oficial de ISC en el Instituto Tecnológico de Parral",
   },
   {
     label: "Facebook",
-    url: "https://www.facebook.com/TecNMParral",
+    url: "https://www.facebook.com/TecnmParral/?locale=es_LA",
     icon: Facebook,
     description: "Síguenos en Facebook para noticias y eventos",
   },
   {
-    label: "Informes",
-    url: "https://www.parral.tecnm.mx/",
+    label: "Solicitar Ficha",
+    url: "https://itparral.mindbox.app/aspirantes/registro/bienvenido",
     icon: MessageCircle,
-    description: "Contáctanos para más información sobre inscripciones",
+    description: "Inicia tu proceso de inscripción aquí",
   },
 ];
 

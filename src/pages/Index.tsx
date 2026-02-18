@@ -4,10 +4,12 @@ import ProjectsSection from "@/components/ProjectsSection";
 import CareersSection from "@/components/CareersSection";
 import ConnectSection from "@/components/ConnectSection";
 import CTASection from "@/components/CTASection";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ThemeSwitcher />
       <HeroSection />
       <BenefitsSection />
       <ProjectsSection />
