@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 import logoITP from "@/assets/Logo_ITP.svg";
-import logoSistemas from "@/assets/Logo_Sistemas.svg";
+import logoSistemas from "@/assets/Logo_Sistemas.png";
 import ReticulaModal from "@/components/ReticulaModal";
 import { GraduationCap } from "lucide-react";
 
