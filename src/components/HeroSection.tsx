@@ -17,17 +17,26 @@ const HeroSection = () => {
       {/* Scanline overlay */}
       <div className="absolute inset-0 scanline pointer-events-none" />
 
+      {/* Logos - top corners */}
+      <motion.img
+        src={logoITP}
+        alt="Logo ITP"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="absolute top-6 left-6 z-10 h-20 md:h-28 drop-shadow-lg"
+      />
+      <motion.img
+        src={logoSistemas}
+        alt="Logo ISC"
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="absolute top-6 right-6 z-10 h-20 md:h-28 drop-shadow-lg"
+      />
+
       <div className="relative z-10 container mx-auto px-4 text-center">
-        {/* Logos */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className="flex items-center justify-center gap-6 mb-8"
-        >
-          <img src={logoITP} alt="Logo ITP" className="h-28 md:h-40 drop-shadow-lg" />
-          <img src={logoSistemas} alt="Logo ISC" className="h-28 md:h-40 drop-shadow-lg" />
-        </motion.div>
+        
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
