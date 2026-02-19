@@ -79,7 +79,7 @@ const HeroSection = () => {
             href="https://www.itparral.edu.mx/inicio/oferta-educativa/sistemas-computacionales/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold text-lg box-glow hover:scale-105 transition-transform"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-semibold text-lg box-glow hover:scale-105 transition-all duration-300 hover:shadow-[0_0_25px_hsl(var(--primary)/0.7),0_0_60px_hsl(var(--primary)/0.4)]"
           >
             Conoce la carrera
           </a>
@@ -87,19 +87,19 @@ const HeroSection = () => {
             href="https://itparral.mindbox.app/aspirantes/registro/bienvenido"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-secondary text-secondary-foreground font-semibold text-lg hover:scale-105 transition-transform"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-secondary text-secondary-foreground font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-[0_0_15px_hsl(var(--secondary)/0.3),0_0_40px_hsl(var(--secondary)/0.1)] hover:shadow-[0_0_25px_hsl(var(--secondary)/0.7),0_0_60px_hsl(var(--secondary)/0.4)]"
           >
             <GraduationCap className="w-5 h-5 mr-2" />
             Solicitar Ficha
           </a>
           <ReticulaModal>
-            <button className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-primary/50 text-primary font-semibold text-lg hover:bg-primary/10 transition-colors">
+            <button className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-primary/50 text-primary font-semibold text-lg hover:bg-primary/10 transition-all duration-300 shadow-[0_0_12px_hsl(var(--accent)/0.2)] hover:shadow-[0_0_25px_hsl(var(--accent)/0.6),0_0_60px_hsl(var(--accent)/0.3)] hover:border-accent hover:text-accent">
               Ver Retícula
             </button>
           </ReticulaModal>
           <a
             href="#conecta"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-muted-foreground/30 text-muted-foreground font-semibold text-lg hover:bg-muted/50 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-muted-foreground/30 text-muted-foreground font-semibold text-lg hover:bg-muted/50 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3),0_0_50px_hsl(var(--primary)/0.15)] hover:border-primary/40 hover:text-foreground"
           >
             Conéctate con nosotros
           </a>
