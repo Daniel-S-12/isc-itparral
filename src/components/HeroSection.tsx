@@ -25,8 +25,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="flex items-center justify-center gap-6 mb-8"
         >
-          <img src={logoITP} alt="Logo ITP" className="h-20 md:h-28 drop-shadow-lg" />
-          <img src={logoSistemas} alt="Logo ISC" className="h-20 md:h-28 drop-shadow-lg" />
+          <img src={logoITP} alt="Logo ITP" className="h-28 md:h-40 drop-shadow-lg" />
+          <img src={logoSistemas} alt="Logo ISC" className="h-28 md:h-40 drop-shadow-lg" />
         </motion.div>
 
         <motion.div
