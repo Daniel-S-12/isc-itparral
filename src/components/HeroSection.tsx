@@ -24,7 +24,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="absolute top-6 left-6 z-10 h-20 md:h-28 drop-shadow-lg"
+        className="absolute top-6 left-6 z-10 h-24 md:h-36 drop-shadow-lg"
       />
       <motion.img
         src={logoSistemas}
@@ -32,7 +32,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="absolute top-6 right-6 z-10 h-20 md:h-28 drop-shadow-lg"
+        className="absolute top-6 right-6 z-10 h-24 md:h-36 drop-shadow-lg"
       />
 
       <div className="relative z-10 container mx-auto px-4 text-center">
