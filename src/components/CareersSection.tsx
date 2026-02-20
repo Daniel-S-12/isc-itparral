@@ -29,7 +29,7 @@ const CareersSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 gradient-text inline-block">
@@ -47,7 +47,7 @@ const CareersSection = () => {
               key={stat.label}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ delay: i * 0.1 }}
               className="text-center bg-card rounded-xl p-6 border border-border"
             >
@@ -62,7 +62,7 @@ const CareersSection = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="flex flex-wrap justify-center gap-3"
         >
           {roles.map((role, i) => (
@@ -70,7 +70,7 @@ const CareersSection = () => {
               key={role}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ delay: i * 0.05 }}
               className="px-5 py-2.5 rounded-full border border-primary/30 text-foreground font-medium hover:bg-primary/10 hover:border-primary/60 transition-all cursor-default"
             >
