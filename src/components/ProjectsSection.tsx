@@ -1,43 +1,48 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import imgGestion from "@/assets/project-gestion-escolar.jpg";
+import imgRobot from "@/assets/project-robot.jpg";
+import imgChatbot from "@/assets/project-chatbot.jpg";
+import imgTransporte from "@/assets/project-transporte.jpg";
+import imgInventario from "@/assets/project-inventario.jpg";
+import imgVideojuego from "@/assets/project-videojuego.jpg";
 
-// Placeholder projects - easily customizable
 const projects = [
   {
     title: "App de Gestión Escolar",
     description: "Sistema web desarrollado por alumnos de ISC para administrar calificaciones y horarios.",
     tags: ["React", "Node.js", "MySQL"],
-    image: null,
+    image: imgGestion,
   },
   {
     title: "Robot Seguidor de Línea",
     description: "Proyecto de IoT con Arduino y sensores para competencias de robótica.",
     tags: ["Arduino", "C++", "IoT"],
-    image: null,
+    image: imgRobot,
   },
   {
     title: "Chatbot con IA",
     description: "Asistente virtual inteligente creado con Python y modelos de lenguaje.",
     tags: ["Python", "IA", "NLP"],
-    image: null,
+    image: imgChatbot,
   },
   {
     title: "App Móvil de Transporte",
     description: "Aplicación Android para consultar rutas de transporte público en Parral.",
     tags: ["Kotlin", "Android", "Firebase"],
-    image: null,
+    image: imgTransporte,
   },
   {
     title: "Sistema de Inventario",
     description: "Plataforma completa para control de inventario con dashboard en tiempo real.",
     tags: ["Vue.js", "PostgreSQL", "Docker"],
-    image: null,
+    image: imgInventario,
   },
   {
     title: "Videojuego 2D",
     description: "Videojuego multiplataforma desarrollado con Unity como proyecto de semestre.",
     tags: ["Unity", "C#", "GameDev"],
-    image: null,
+    image: imgVideojuego,
   },
 ];
 
@@ -48,7 +53,7 @@ const ProjectsSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 gradient-text inline-block">
@@ -65,7 +70,7 @@ const ProjectsSection = () => {
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ delay: index * 0.1 }}
               className="group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:box-glow"
             >

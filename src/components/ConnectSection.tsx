@@ -30,7 +30,7 @@ const ConnectSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 gradient-text inline-block">
@@ -50,7 +50,7 @@ const ConnectSection = () => {
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ delay: i * 0.15 }}
               className="group flex flex-col items-center bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:box-glow"
             >
